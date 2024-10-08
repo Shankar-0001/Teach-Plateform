@@ -1,0 +1,386 @@
+.scrollable-content {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 4px;
+    overflow-y: auto;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
+}
+
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-section {
+    width: 49.5%;
+    background-color: rgba(248, 252, 253, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.right-section {
+    width: 49.8%;
+    background-color: rgba(248, 252, 253, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-text {
+    width: 561px;
+    height: 67px;
+    margin: 50px 0px 15px 0px;
+    left: 252px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.head-text {
+    font-family: "DM Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 58.59px;
+    text-align: left;
+    color: rgba(19, 12, 64, 1);
+}
+
+.sub-text {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+}
+
+
+.prep-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-section {
+    display: flex;
+    text-align: center;
+    width: 580px;
+    height: 130px;
+    top: 3024px;
+    left: 255px;
+    gap: 15px;
+    border: 1px;
+    opacity: 0px;
+    background-color: white;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 15px;
+    /* border: 2px  rgb(0, 0, 0); */
+}
+
+.card-header .absolute {
+    position: relative;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.card-header {
+    position: relative;
+    height: 160px;
+}
+
+.card-header img {
+    width: 165px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.card-body {
+    /* padding: 10px; */
+    flex: 1;
+}
+
+
+.subText {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26.04px;
+    text-align: left;
+}
+
+.sub-button {
+    background-color: rgba(30, 203, 219, 0.15);
+    color: rgba(3, 179, 195, 1);
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.83px;
+    text-align: left;
+
+    width: Hug (98px)px;
+    height: Fixed (40px)px;
+    top: 3115px;
+    left: 742px;
+    padding: 11px 13px 11px 13px;
+    gap: 5px;
+    border-radius: 50px;
+    opacity: 0px;
+
+}
+
+
+
+.line-through {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.font-semibold {
+    font-size: 18px;
+    font-weight: 600;
+    font-weight: 700;
+    text-align: left;
+    line-height: 23.44px;
+    color: rgba(90, 39, 124, 1);
+    font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width:1280px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c1d95;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.font-semibold {
+    font-weight: 600;
+    color: #333;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-section {
+        width: 100%;
+    }
+
+    .rate {
+        margin-left: 8px;
+    }
+
+    .sub-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .discount {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rate p {
+        font-size: 14px;
+    }
+
+    .sub-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+.prep-card {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.card {
+    width: 265px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card-image {
+    position: relative;
+    height: 180px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid #e5e5e5;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.card-share-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.card-content {
+    padding: 16px;
+    flex: 1;
+}
+
+.card-text-muted {
+    color: #666;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+
+
+.text-light {
+    color: white;
+}
+
+.text-strike {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.text-bold {
+    font-weight: 600;
+    color: #333;
+}
+
+.btn-buy {
+    background-color: #4c1d95;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+
+.text-bold {
+    font-weight: bold;
+    color: #333;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.btn-view {
+    width: Hug (118px)px;
+    height: Fixed (55px)px;
+    top: 3744px;
+    left: 1288px;
+    padding: 13px 22px 13px 22px;
+    gap: 5px;
+    border-radius: 50px;
+    opacity: 0px;
+    font-family: "DM Sans", sans-serif;
+    /* background-color: rgba(30, 203, 219, 1),rgba(111, 49, 153, 1); */
+}
